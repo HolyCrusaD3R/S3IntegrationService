@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Src/" />
+  <Folder Name="/Src/Core/">
+    <Project Path="S3IntegrationService.Application/S3IntegrationService.Application.csproj" />
+  </Folder>
+  <Folder Name="/Src/Infrastructure/">
+    <Project Path="S3IntegrationService.Infrastructure/S3IntegrationService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Src/Presentation/">
+    <Project Path="S3IntegrationService/S3IntegrationService.csproj" />
+  </Folder>
+</Solution>
