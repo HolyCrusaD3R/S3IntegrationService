@@ -1,4 +1,7 @@
 
+using S3IntegrationService.Application.S3.Commands;
+using S3IntegrationService.Infrastructure;
+
 namespace S3IntegrationService
 {
     public class Program
@@ -9,6 +12,9 @@ namespace S3IntegrationService
 
             // Add services to the container.
 
+            builder.Services.AddInfrastructure(builder.Configuration);
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(UploadFileCommandHandler).Assembly));
+        
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
